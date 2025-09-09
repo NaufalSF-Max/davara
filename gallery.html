@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="zxx">
+<head>
+	<meta charset="UTF-8">
+	<title>Davara - Gallery</title>
+	<!-- =============== META =============== -->
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="assets/logo/icons.svg">
+	<!-- =============== STYLE =============== -->
+	<link rel="stylesheet" href="css/critical.css">
+	<style>
+		.preloader-active .preloader-cover{
+			height: 4000px;
+			transform: translate(-50%,-50%) rotate(45deg);
+		}
+		.preloader-cover{
+			height: 0;
+			width: 4000px;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%) rotate(45deg);
+			background: #131213;
+			position: fixed;
+			z-index: 999;
+			overflow: hidden;
+			transition: .8s cubic-bezier(0.65, 0.05, 0.36, 1) .3s;
+			overflow: hidden;
+			will-change: top, left;
+		}
+	</style>
+</head>
+
+<body id="home" class="home preloader-active" style="background-image: url(img/bg-body.svg);">
+	<!--=============== PRELOADER ===============-->
+	<div class="preloader-cover">
+		<div class="preloader">
+			<div class="ajax-loader">
+				<div class="ajax-loader-logo">
+					<div class="ajax-loader-circle">
+						<svg class="ajax-loader-circle-spinner" viewBox="0 0 500 500" xml:space="preserve">
+							<circle cx="250" cy="250" r="239" />
+						</svg>
+					</div>
+					<div class="ajax-loader-letters">Q</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--============= PRELOADER END =============-->
+
+	<!--=============== HEADER ===============-->
+	<header class="header">
+		<div class="container">
+			<a href="#" class="nav-btn">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			<div class="row align-items-center">
+				<!--=============== LOGO ===============-->
+				<div class="col-12 col-sm-6 col-lg-3 logo-item">
+					<a href="index.html" class="logo"><img src="assets/logo/davara.png" alt="logo"></a>
+				</div>
+				<!--============= LOGO END =============-->
+				<div class="col-6 nav-menu-cover">
+					<!--============= NAV MENU =============-->
+					<nav class="nav-menu">
+						 <ul class="nav-list">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">Tentang Kami</a></li>
+                        <li><a href="services.html">Layanan</a></li>
+                        <li class="active"><a href="gallery.html">Galeri</a></li>
+                        <li><a href="contacts.html">Kontak</a></li>
+                    </ul>
+					</nav>
+					<!--=========== NAV MENU END ===========-->
+				</div>
+				<div class="col-12 col-sm-6 col-lg-3">
+					<!--============ HEADER ICON ============-->
+					<ul class="header-icon">
+						<li class="search">
+							<a class="icon" href="#">
+								<i class="fa fa-search" aria-hidden="true"></i>
+							</a>
+							<form action="#">
+								<input type="search" name="search" placeholder="Search">
+								<button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+							</form>
+						</li>
+						<li class="favorites">
+							<a class="icon" href="#">
+								<i class="fa fa-heart" aria-hidden="true"></i>
+								<span>2</span>
+							</a>
+						</li>
+						<li>
+							<a class="icon" href="#">
+								<i class="fa fa-user" aria-hidden="true"></i>
+							</a>
+						</li>
+						<li>
+							<a class="icon" href="#">
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</a>
+						</li>
+					</ul>
+					<!--========== HEADER ICON END ==========-->
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--============= HEADER END =============-->
+
+	<!--============== PAGE-TITLE ==============-->
+	<div class="page-title" style="background-image: url(img/bg-page.jpg);">
+		<div class="container">
+			<h1 class="title">Gallery</h1>
+			<div class="breadcrumbs">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li>Gallery</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<!--============ PAGE-TITLE END ============-->
+
+	<!--=============== S-VIDEO ===============-->
+	<section class="s-video">
+		<div class="container">
+			<h2>Video</h2>
+			<p class="slogan">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmmpor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+		</div>
+		<div class="slider-video">
+			<div class="slide-video">
+				<video  autoplay loop muted>
+					<source src="https://assets.mixkit.co/videos/56/56-720.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div class="slide-video">
+				<video autoplay loop muted>
+					<source src="https://assets.mixkit.co/videos/11/11-720.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div class="slide-video">
+				<video autoplay loop muted>
+					<source src="https://assets.mixkit.co/videos/558/558-720.mp4" type="video/mp4" />
+				</video>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="s-video">
+		<div class="container">
+			<h2>Sorotan Video Karya Kami</h2>
+			<p class="slogan">Berikut adalah beberapa cuplikan sinematik dari berbagai proyek yang telah kami kerjakan. Lihat bagaimana kami mengubah perspektif melalui lensa drone.</p>
+		</div>
+		<div class="slider-video">
+			<div class="slide-video">
+				<video autoplay loop muted poster="assets/img/poster-video-1.jpg">
+					<source src="assets/videos/video-properti.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div class="slide-video">
+				<video autoplay loop muted poster="assets/img/poster-video-2.jpg">
+					<source src="assets/videos/video-event.mp4" type="video/mp4" />
+				</video>
+			</div>
+			<div class="slide-video">
+				<video autoplay loop muted poster="assets/img/poster-video-3.jpg">
+					<source src="assets/videos/video-wedding.mp4" type="video/mp4" />
+				</video>
+			</div>
+		</div>
+	</section> -->
+	<!--============= S-VIDEO END =============-->
+
+	<!--============== S-GALLERY ==============-->
+	<section class="s-gallery">
+		<div class="container">
+			<h2>Galeri Portofolio</h2>
+        	<p class="slogan">Jelajahi hasil karya terbaik kami. Pilih kategori di bawah ini untuk melihat foto-foto dari berbagai proyek yang telah kami tangani.</p>
+			<div class="tab-wrap">
+				<ul class="tab-nav gallery-tabs">
+					<li class="item active" rel="tab1">Semua</li>
+					<li class="item" rel="tab2">Acara</li>
+					<li class="item" rel="tab3">Properti</li>
+					<li class="item" rel="tab4">Wedding</li>
+					<li class="item" rel="tab5">Pariwisata</li>
+				</ul>
+				<!--========= TABS-CONTENT =========-->
+				<div class="tabs-content">
+					<div class="tab tab1">
+						<div class="gallery-cover">
+							<div class="gallery-item">
+								<a href="img/gal-1.jpg" data-fancybox="gallery1">
+									<img src="img/gal-1.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#1</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-2.jpg" data-fancybox="gallery1">
+									<img src="img/gal-2.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#2</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-3.jpg" data-fancybox="gallery1">
+									<img src="img/gal-3.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#3</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-6.jpg" data-fancybox="gallery1">
+									<img src="img/gal-6.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#4</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-5.jpg" data-fancybox="gallery1">
+									<img src="img/gal-5.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#5</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-4.jpg" data-fancybox="gallery1">
+									<img src="img/gal-4.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#6</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-9.jpg" data-fancybox="gallery1">
+									<img src="img/gal-9.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#7</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-8.jpg" data-fancybox="gallery1">
+									<img src="img/gal-8.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#8</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-7.jpg" data-fancybox="gallery1">
+									<img src="img/gal-7.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#9</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="tab tab2">
+						<div class="gallery-cover">
+							<div class="gallery-item">
+								<a href="img/gal-1.jpg" data-fancybox="gallery1">
+									<img src="img/gal-1.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#1</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-2.jpg" data-fancybox="gallery1">
+									<img src="img/gal-2.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#2</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-3.jpg" data-fancybox="gallery1">
+									<img src="img/gal-3.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#3</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-6.jpg" data-fancybox="gallery1">
+									<img src="img/gal-6.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#4</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-5.jpg" data-fancybox="gallery1">
+									<img src="img/gal-5.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#5</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-4.jpg" data-fancybox="gallery1">
+									<img src="img/gal-4.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#6</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-9.jpg" data-fancybox="gallery1">
+									<img src="img/gal-9.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#7</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-8.jpg" data-fancybox="gallery1">
+									<img src="img/gal-8.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#8</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-7.jpg" data-fancybox="gallery1">
+									<img src="img/gal-7.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#9</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="tab tab3">
+						<div class="gallery-cover">
+							<div class="gallery-item">
+								<a href="img/gal-1.jpg" data-fancybox="gallery1">
+									<img src="img/gal-1.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#1</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-2.jpg" data-fancybox="gallery1">
+									<img src="img/gal-2.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#2</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-3.jpg" data-fancybox="gallery1">
+									<img src="img/gal-3.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#3</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-6.jpg" data-fancybox="gallery1">
+									<img src="img/gal-6.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#4</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-5.jpg" data-fancybox="gallery1">
+									<img src="img/gal-5.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#5</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-4.jpg" data-fancybox="gallery1">
+									<img src="img/gal-4.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#6</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-9.jpg" data-fancybox="gallery1">
+									<img src="img/gal-9.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#7</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-8.jpg" data-fancybox="gallery1">
+									<img src="img/gal-8.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#8</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-7.jpg" data-fancybox="gallery1">
+									<img src="img/gal-7.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#9</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="tab tab4">
+						<div class="gallery-cover">
+							<div class="gallery-item">
+								<a href="img/gal-1.jpg" data-fancybox="gallery1">
+									<img src="img/gal-1.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#1</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-2.jpg" data-fancybox="gallery1">
+									<img src="img/gal-2.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#2</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-3.jpg" data-fancybox="gallery1">
+									<img src="img/gal-3.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#3</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-6.jpg" data-fancybox="gallery1">
+									<img src="img/gal-6.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#4</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-5.jpg" data-fancybox="gallery1">
+									<img src="img/gal-5.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#5</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-4.jpg" data-fancybox="gallery1">
+									<img src="img/gal-4.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#6</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-9.jpg" data-fancybox="gallery1">
+									<img src="img/gal-9.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#7</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-8.jpg" data-fancybox="gallery1">
+									<img src="img/gal-8.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#8</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-7.jpg" data-fancybox="gallery1">
+									<img src="img/gal-7.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#9</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+					<div class="tab tab5">
+						<div class="gallery-cover">
+							<div class="gallery-item">
+								<a href="img/gal-1.jpg" data-fancybox="gallery1">
+									<img src="img/gal-1.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#1</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-2.jpg" data-fancybox="gallery1">
+									<img src="img/gal-2.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#2</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-3.jpg" data-fancybox="gallery1">
+									<img src="img/gal-3.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#3</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-6.jpg" data-fancybox="gallery1">
+									<img src="img/gal-6.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#4</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-5.jpg" data-fancybox="gallery1">
+									<img src="img/gal-5.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#5</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-4.jpg" data-fancybox="gallery1">
+									<img src="img/gal-4.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#6</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-9.jpg" data-fancybox="gallery1">
+									<img src="img/gal-9.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#7</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-8.jpg" data-fancybox="gallery1">
+									<img src="img/gal-8.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#8</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+							<div class="gallery-item">
+								<a href="img/gal-7.jpg" data-fancybox="gallery1">
+									<img src="img/gal-7.jpg" alt="img">
+									<div class="gal-item">
+										<h5 class="title">photo#9</h5>
+										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--======= TABS-CONTENT END =======-->
+			</div>
+			<!--========== TAB-WRAP END ==========-->
+		</div>
+	</section>
+	<!--============= S-GALLERY END =============-->
+
+	<!--======================= FOOTER =======================-->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 col-lg-4 footer-info">
+					<h5>Tentang Davara</h5>
+					<p>DAVARA (Dirgantara Visual Advertising) adalah perusahaan yang bergerak di bidang jasa dokumentasi visual menggunakan drone.</p>
+				</div>
+
+				<div class="col-6 col-md-3 col-lg-2 blok-link">
+					<h5>Layanan Kami</h5>
+					<ul>
+						<li><a href="services.html">Dokumentasi Acara</a></li>
+						<li><a href="services.html">Profil Properti</a></li>
+						<li><a href="services.html">Iklan & Media</a></li>
+						<li><a href="services.html">Wedding</a></li>
+					</ul>
+				</div>
+
+				<div class="col-6 col-md-3 col-lg-2 blok-link">
+					<h5>Tautan Penting</h5>
+					<ul>
+						<li><a href="about.html">Tentang Kami</a></li>
+						<li><a href="gallery.html">Galeri</a></li>
+						<li><a href="contacts.html">Kontak</a></li>
+						<li><a href="pravicy-policy.html">Kebijakan Privasi</a></li>
+					</ul>
+				</div>
+
+				<div class="col-12 col-lg-4 footer-subscribe">
+					<h5>Dapatkan Info & Penawaran Terbaru</h5>
+					<form action="/" class="subscribe-form">
+						<input type="email" name="subscribe" placeholder="Masukkan e-mail Anda">
+						<input type="submit" value="Kirim">
+					</form>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="row align-items-center">
+					<div class="col-12 col-md-4">
+						<a href="index.html" class="logo footer-logo"><img src="assets/logo/davara.png" alt="logo"></a>
+					</div>
+					<div class="col-12 col-md-4">
+						
+					</div>
+					<div class="col-12 col-md-4">
+						<ul class="soc-link">
+							<li><a target="_blank" href="https://www.facebook.com/share/1CYDF3EqWf/?mibextid=wwXIfr "><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="https://www.instagram.com/davara.adv"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+							<li><a target="_blank" href="https://www.tiktok.com/@davara.adv?"><i class="fab fa-tiktok" aria-hidden="true"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+							<p><a class="rovadex">Davara</a> © 2025. <a href="pravicy-policy.html" target="_blank">All Rights Reserved.</a></p>
+						</div>
+		</div>
+	</footer>
+	<!--===================== FOOTER END =====================-->
+
+	<!--================= TO TOP =================-->
+	<a class="to-top" href="#home">
+		<i class="fa fa-chevron-up" aria-hidden="true"></i>
+		<span>
+			<img src="img/icon-tab-1.svg" alt="">
+		</span>
+	</a>
+	<!--=============== TO TOP END ===============-->
+
+	<!-- =============== STYLE =============== -->
+	<link rel="stylesheet" href="css/slick.min.css">
+	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--=============== TEMPLATE SCRIPT ===============-->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+</html>
