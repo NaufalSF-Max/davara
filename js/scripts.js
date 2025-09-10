@@ -90,7 +90,9 @@ $( window ).on( 'load', function(){
 			lazyLoad: 'progressive',
 			cssEase: 'cubic-bezier(0.7, 0, 0.3, 1)',
 			touchThreshold: 100,
-			asNavFor: '.main-slider-nav'
+			asNavFor: '.main-slider-nav',
+			autoplay: true,
+        	autoplaySpeed: 2000
 		});
 	}
 

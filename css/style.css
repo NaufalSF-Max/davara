@@ -111,6 +111,16 @@ a{
 	will-change: top, left;
 }
 
+/* Styling untuk Logo di Preloader */
+.ajax-loader-letters img {
+    width: 60px; /* Atur ukuran logo Anda di sini */
+    height: auto;
+    position: absolute; /* Memastikan posisi tepat di tengah */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Trik centering */
+}
+
 .page-title .title,
 h1,h2,h3,h4,h5,h6{
 	color: #fff;
